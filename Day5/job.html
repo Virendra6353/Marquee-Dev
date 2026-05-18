@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <!-- header  -->
+     <header>
+        <h1>Job Application Form</h1>
+     </header>
+
+     <!-- form  -->
+      <main>
+        <form action="">
+            <!-- Personal Infromation  -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name : </label>
+                <input type="text" id="name" placeholder="Enter Name" required>
+                <br><br>
+
+                <label for="email">Email : </label>
+                <input type="email" id="email" placeholder="Enter email" required> 
+                <br><br>
+
+                <label for="phone">Phone Number : </label>
+                <input type="tel" id="phone" placeholder="Enter Phone" required><br><br>
+
+                <label for="dob">DOB : </label>
+                <input type="date" id="dob" required><br><br>
+
+                <!-- <input type="submit"/> -->
+            </fieldset>
+
+            <!-- Gender Infromation -->
+            <fieldset>
+                 <legend>Gender Information</legend>
+                 <input type="radio" id="male" name="gender">
+                 <label for="male">Male</label><br>
+
+                 <input type="radio" id="female" name="gender">
+                 <label for="female">Female</label>
+                 <br>
+
+                 <input type="radio" id="other" name="gender">
+                 <label for="other">Other</label>
+                 <br>
+                 
+            </fieldset>
+
+            <!-- skills section  -->
+            <fieldset>
+                <legend>Skills</legend>
+                <input type="checkbox" id="mern">
+                <label for="mern">MERN</label>
+                <br>
+
+                <input type="checkbox" id="AI">
+                <label for="AI">AI Developer</label><br>
+
+                <input type="checkbox" id="data">
+                <label for="data">Data Analytics</label>
+                <br>
+
+                <input type="checkbox" id="cloud">
+                <label for="cloud">Cloud</label>
+                <br>
+
+                <input type="checkbox" id="spring">
+                <label for="spring">SpringBoot</label>
+                <br>
+            </fieldset>
+
+            <!-- Additional Information -->
+             <fieldset>
+                <legend>Additionla Information</legend>
+
+                <label for="experience">Years Of Experience</label>
+                <select id="experience">
+                    <option disabled selected>Select Year</option>
+                    <option>Fresher</option>
+                    <option>1 Year</option>
+                    <option>2 Year</option>
+                    <option>3 Year+</option>
+                </select><br>
+<br>
+
+                <!-- Location Information  -->
+                 <label for="Location">Preferred Location : </label>
+                 <select name="" id="">
+                    <option disabled selected>Select location</option>
+                    <option value="vd">Vadodara</option>
+                    <option value="in">Indore</option>
+                    <option value="nd">Noida</option>
+                    <option value="hyd">Hyderabad</option>
+                 </select>
+
+                 <br>
+                 <br>
+
+                 <label for="resume">Upload Resume : </label>
+                 <input type="file" id="resume" maxlength="10MB" accept=".pdf,.html" required>
+                </fieldset>
+                <br>
+                 <Button type="submit">Submit</Button>
+                 <button type="reset" >Reset</button>
+        </form>
+      </main>
+</body>
+</html>
