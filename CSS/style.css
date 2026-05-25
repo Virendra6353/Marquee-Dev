@@ -1,0 +1,12 @@
+h1{
+    color: chartreuse;
+}
+
+p{
+    font-size: large;
+    text-decoration: underline dotted red;
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
