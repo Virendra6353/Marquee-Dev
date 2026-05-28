@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #141e30, #243b55);
+    }
+
+    .main{
+      width: 320px;
+      padding: 30px 20px;
+      border-radius: 20px;
+      background: white;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+
+    .photo{
+      height: 140px;
+      width: 140px;
+      margin: auto;
+      border-radius: 50%;
+      border: 5px solid #4facfe;
+      background: url("https://i.imgflip.com/antrhy.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .name{
+      margin-top: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .role{
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .desc{
+      margin-top: 15px;
+      color: burlywood;
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    .buttons{
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    button{
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .follow{
+      background: violet;
+      color: white;
+    }
+
+
+    .message{
+      background: #f1f1f1;
+      color: #333;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div class="photo"></div>
+
+    <div class="name">Salmon Bhai</div>
+
+    <div class="role">
+      <p>BTech CSE</p>
+      <p>MERN Developer</p>
+    </div>
+
+    <div class="desc">
+      Passionate about web development, problem solving,
+      and building cool projects.
+    </div>
+
+    <div class="buttons">
+      <button class="follow">Follow</button>
+      <button class="message">Message</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
