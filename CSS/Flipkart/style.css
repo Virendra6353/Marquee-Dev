@@ -1,0 +1,94 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: inline-block;
+    background-color: #f8e831;
+    font-size: large;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15%;
+    font-style: italic;
+    font-weight: 600;
+}
+.travel{
+    display: inline-block;
+    background-color: whitesmoke;
+    font-size: large;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15%;
+    font-style: italic;
+    font-weight: 600;
+}
+header{
+    /* border: 2px solid black; */
+}
+
+
+.location{
+    display: inline-block;
+    margin-left: 75%;
+    font-weight: 500;
+}
+
+.mid input{
+    width: 88%;
+    outline: none;
+    padding: 10px;
+    border: 2px solid dodgerblue;
+    border-radius: 6px;
+}
+
+.bottom{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bottom .box{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/fashion.svg");
+    background-size: cover;
+}
+
+.imgs{
+    box-sizing: border-box;
+    height: 320px;
+    padding: 10px;
+}
+
+.recommendation{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F7A200;
+    border-radius: 10px;
+}
+.item{
+    display: inline-block;
+    /* border-radius: 6px; */
+}
+.item img{
+    border-radius: 10px;
+}
+
+footer{
+    background-color: black;
+    height: auto;
+    color: white;
+    box-sizing: border-box;
+    
+}
+
+.about, .desc, .help{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15%;
+}
