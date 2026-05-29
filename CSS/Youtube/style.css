@@ -10,6 +10,8 @@ header{
 .top{
     height: 56px;
     width : 100%;
+    position: sticky;
+    top: 2px;
     box-sizing: border-box;
 }
 .menu{
