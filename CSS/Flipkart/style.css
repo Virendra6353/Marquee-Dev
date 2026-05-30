@@ -43,8 +43,6 @@
 
 .bottom{
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-evenly;
 }
 .bottom .box{
     display: inline-block;

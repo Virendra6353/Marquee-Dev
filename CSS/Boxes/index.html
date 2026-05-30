@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            border: 3px solid black;
+            position: relative;
+            
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+            position: absolute;
+            z-index: 4;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="box yellow"></div>
+</body>
+</html>
