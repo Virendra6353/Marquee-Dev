@@ -1,0 +1,83 @@
+:root{
+    --primary:eee;
+    --radius:15px;
+    --purp:purple;
+    --yel:yellow;
+    --gre:green;
+    --main:bisque;
+}   
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: var(--main);
+    /* border: 2px solid; */
+    height: 900px;
+    width: 700px;
+    margin-left: 28%;
+    border-radius: var(--radius);
+    margin-top: 100px;
+}
+
+header{
+    top: 50px;
+    position: relative;
+    height: 100px;
+    width: 350px;
+    display: inline-block;
+    left: 26%;
+    text-align: center;
+    padding-top: 25px;
+    font-size: xx-large;
+    color: #DCD9D9;
+    border: 2px solid;
+    background-color:#51311E ;
+    border-radius: var(--radius);
+}
+
+.card{
+   height: 200px;
+   width: 500px;
+   position: relative;
+   background-color: bisque;
+   border-radius: var(--radius);
+   box-sizing: border-box;
+}
+
+.head{
+    height: 50px;
+    /* background-color:aqua; */
+    text-align: center;
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+    box-sizing: border-box;
+    /* margin-top: 5px; */
+    font-weight: 500;
+    border-radius: var(--radius);
+    /* border: 2px solid; */
+}
+
+.body{
+    text-align: center;
+    font-size: large;
+}
+
+.purp{
+    background-color: var(--purp);
+    left: 15%;
+    top: 70px;
+}
+
+.yellow{
+    background-color: var(--yel);
+    top: 50px;
+}
+.green{
+    background-color: var(--gre);
+    top: 70px;
+}

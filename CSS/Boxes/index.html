@@ -5,27 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boxes</title>
     <style>
+        :root{
+            --primary:#ffaabc;
+        }
+        *{
+            background-color: black;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .box{
             height: 200px;
             width: 200px;
             display: inline-block;
-            border: 3px solid black;
-            position: relative;
+            border: 3px solid white;
+            margin: 0px;
+            box-sizing: border-box;
             
         }
+        .box:hover{
+            z-index: 6;
+        }
         .red{
-            background-color: red;
+            /* background-color: red; */
+            background-color: var(--primary);
+            position:absolute;
         }
         .blue{
             background-color: blue;
             position: absolute;
-            z-index: 4;
+            left: 50px;
+            top: 50px;
+            z-index: 2;
         }
         .green{
             background-color: green;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+
+            position: absolute;
         }
         .yellow{
             background-color: yellow;
+            position: absolute;
+            top: 150px;
+            z-index: 4;
+            left: 150px;
         }
     </style>
 </head>
