@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.child{
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    background-color: darkgray;
+}
