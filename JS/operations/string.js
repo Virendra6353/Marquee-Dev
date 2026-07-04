@@ -11,7 +11,7 @@ console.log(str.substring(0,5));
 console.log(str.slice(-5));
 console.log(str.substr(1,6));
 
-let s = "    username   "
+let s = "    username   ";
 console.log(s.trim());
 console.log(str.replace("HEllo","Bye"));
-console.log(str.includes("Hello"))
+console.log(str.includes("Hello"));
