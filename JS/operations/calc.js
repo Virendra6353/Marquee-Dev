@@ -24,3 +24,4 @@ function divi(a,b){
 }
 
 calc(x,y,mult)
+

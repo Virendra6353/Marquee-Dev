@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: peachpuff;
+    background: url(sun.png);
+    background-size: cover
+}
+
+h1{
+    display:inline-block;
+    height: 100px;
+    width: auto;
+    color: white;
+    /* border: 2px solid; */
+}
+
+#qu{
+    height: 100px;
+    width: auto;
+    color: white;
+    font-size: x-large;
+    /* border: 2px solid; */
+    font-weight: 800;
+}
+
+.qb{
+    height: 50px;
+    width: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    background-color: gray;
+    font-weight: 700;
+    color: whitesmoke;
+    border-color: black;
+    font-size: large;
+}
