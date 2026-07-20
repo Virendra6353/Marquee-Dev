@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass_Strength</title>
+</head>
+<body>
+    <input type="password" class="pass">Enter Password
+    <p class="t">first enter a password</p>
+
+    <script>
+        const t = document.querySelector(".t")
+        const pass = document.querySelector(".pass");
+        
+        pass.addEventListener("input",()=>{
+            let str = pass.value;
+            if(str.length < 6){
+                t.textContent = "Weak password";
+            }else if(str.length >= 6 && str.length <= 8){
+                t.textContent= "Mid password";
+            }else if(str.length > 8 && !str.includes('1')&&!str.includes('0')&&!str.includes('2')&&!str.includes('3')&&!str.includes('4')&&!str.includes('5')&&!str.includes('6')&&!str.includes('7')&&!str.includes('8')&&!str.includes('9')){
+                t.textContent = "Strong password";
+            }else{
+                t.textContent = "Very Strong password"
+            }
+        })
+    </script>
+</body>
+</html>

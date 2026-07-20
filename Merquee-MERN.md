@@ -323,3 +323,7 @@ console.log(obj1.address.city); // Delhi
 ### Hoisting
 - when Js moves declaration to the top before executing the code
 
+---
+## Dom Manipulation
+- Document object model
+- Used to read, modify and manipulate using JS

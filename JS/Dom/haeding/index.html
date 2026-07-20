@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:  300px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>Hello there</h1>
+    </div>
+    <script>
+        const he = document.querySelector("h1");
+        const h = document.querySelector(".box");
+        h.addEventListener("keydown",function(){
+           he.textContent = "mouse donw"
+        })
+        he.addEventListener("mouseup",function(){
+            he.textContent = "Hello there"
+        })
+        h.addEventListener("mousemove",function(){
+            console.log("Hello")
+        })
+    </script>
+</body>
+</html>
