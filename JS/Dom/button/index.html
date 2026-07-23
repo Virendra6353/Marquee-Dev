@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="show">Show para</button>
+    <button id="hide">Hide para</button>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quo reiciendis numquam nulla, repellat quam dolorum laudantium, odio eos blanditiis nobis molestiae voluptatibus, libero reprehenderit consectetur voluptatum ad sit? Consequatur.</p>
+
+    <input type="password" id="password" placeholder="*********">
+    <script>
+        const para = document.getElementById("para");
+        const hide = document.getElementById("hide");
+        const show = document.getElementById("show");
+
+        const pass = document.getElementById("password")
+        let toggle = false;
+
+        show.addEventListener("click",()=>{
+           if(toggle){
+            toggle = false;
+           }else{
+            toggle = true;
+           }
+           if(toggle){
+            pass.type = "text";
+           }else{
+            pass.type = "password";
+           }
+        })
+        hide.addEventListener("click",()=>{
+            para.style.display = "none";
+        })
+
+
+    </script>
+</body>
+</html>

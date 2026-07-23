@@ -327,3 +327,9 @@ console.log(obj1.address.city); // Delhi
 ## Dom Manipulation
 - Document object model
 - Used to read, modify and manipulate using JS
+
+### Regex
+- regular expression 
+- $ used for ending expression
+- ^ used for starting expression
+- . anyone character
