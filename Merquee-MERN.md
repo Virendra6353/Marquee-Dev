@@ -333,3 +333,29 @@ console.log(obj1.address.city); // Delhi
 - $ used for ending expression
 - ^ used for starting expression
 - . anyone character
+
+### `this` Keyword in JavaScript (Short Note)
+
+The **`this`** keyword refers to the **object that is currently executing a function**. Its value depends on **how the function is called**.
+
+* **Global scope:** `this` refers to the `window` object (in browsers).
+* **Object method:** `this` refers to the object calling the method.
+* **Regular function:** `this` is `window` (non-strict mode) or `undefined` (strict mode).
+* **Event listener:** `this` refers to the element that triggered the event.
+* **Arrow function:** Does **not** have its own `this`; it inherits `this` from its surrounding scope.
+* **Classes:** `this` refers to the current object (instance).
+
+**Example:**
+
+```javascript
+const person = {
+    name: "John",
+    greet() {
+        console.log(this.name);
+    }
+};
+
+person.greet(); // John
+```
+
+**Key Point:** `this` is determined by **how a function is invoked**, not where it is defined (except for arrow functions).

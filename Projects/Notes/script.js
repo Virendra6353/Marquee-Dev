@@ -40,9 +40,12 @@ create.addEventListener("click",()=>{
 
         let div = document.getElementById("div");
 
-        div.append(content,br,save,br)
+        div.append(content,br,save)
 
         save.addEventListener("click",()=>{
+            if(content.value == ""){
+                return;
+            }
             let ul = document.getElementById("notes");
             let li = document.createElement("li");
 
@@ -55,9 +58,10 @@ create.addEventListener("click",()=>{
             disp.innerText = content.value;            
             disp.style.display = "none";
 
-            li.append(show,br,disp,br)
+            li.append(show,br,disp)
             ul.append(li)
             let three = false;
+            divnote.innerHTML = ""
             show.addEventListener("click",()=>{
                 if(!three){
                 disp.style.display = "block";
@@ -65,7 +69,8 @@ create.addEventListener("click",()=>{
                     disp.style.display = "none";
                 }
                 three = !three
-            })    
+            }) 
+
 
             one =false;
             two = false;

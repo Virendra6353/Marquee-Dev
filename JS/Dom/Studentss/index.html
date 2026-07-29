@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Traversal</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: whitesmoke;
+      padding: 30px;
+    }
+
+    h1{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #control {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #control button{
+      padding: 10px 15px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #container{
+      width: 700px;
+      margin: auto;
+    }
+
+    .card{
+      background: white;
+      border: 2px solid black;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .action{
+      margin-top: 15px;
+    }
+
+    .action button{
+      margin-right: 8px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    #resul{
+      text-align: center;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .favi{
+        background-color: palegoldenrod;
+    }
+
+  </style>
+</head>
+<body>
+    <h1>Student Directory</h1>
+    <div id="control">
+        <button id="first">First student</button>
+        <button id="last">Last Student</button>
+        <button id="highlight">Highlight all</button>
+        <button id="reset">Reset</button>
+        <button id="count">Total Student</button>
+    </div>
+
+    <div id="container">
+        <div class="card">
+            <h2>Satoru</h2>
+            <p>The honoured one</p>
+            <img src="satoru.jpg" alt="" height="150px" width="100px">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+            <button class="fav">Favorite</button>
+            <button class="del">Delete</button>
+        </div>
+        <div class="card">
+            <h2>Yuji</h2>
+            <p>The vessel of Sukuna</p>
+            <img src="yuji.jpg" alt="" height="150px" width="100px">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+            <button class="fav">Favorite</button>
+            <button class="del">Delete</button>
+        </div>
+        <div class="card">
+            <h2>Megumi</h2>
+            <p>The child of Zenin</p>
+            <!-- <img src="" alt=""> -->
+            <img src="megumi.jpg" alt="" height="150px" width="100px">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+            <button class="fav">Favorite</button>
+            <button class="del">Delete</button>
+        </div>
+        <div class="card">
+            <h2>Toji Fushiguro</h2>
+            <p>The sorcerer killer</p>
+            <img src="toji.jpg" alt="" height="150px" width="100px">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+            <button class="fav">Favorite</button>
+            <button class="del">Delete</button>
+        </div>
+    </div>
+
+    <h2 id="result">Total Student : 4</h2>
+    <script src="script.js"></script>
+</body>
+</html>

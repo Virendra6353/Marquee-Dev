@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8f4e8;
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.main{
+    width:700px;
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+#head{
+    text-align:center;
+    color:#4d3b2f;
+    margin-bottom:25px;
+}
+
+#create{
+    width:100%;
+    padding:12px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    background:#8b5e3c;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#create:hover{
+    background:#6f4a2f;
+}
+
+#divnote{
+    margin-top:25px;
+}
+
+#divnote input{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+#divnote textarea{
+    width:100%;
+    height:180px;
+    resize:none;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    margin-bottom:15px;
+}
+
+#divnote button{
+    padding:10px 18px;
+    border:none;
+    border-radius:6px;
+    background:#4caf50;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#divnote button:hover{
+    background:#388e3c;
+}
+
+#notes{
+    margin-top:30px;
+    list-style:none;
+}
+
+#notes li{
+    background:#fffdf6;
+    border-left:6px solid #8b5e3c;
+    margin-bottom:18px;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    font-size:18px;
+}
+
+#notes li button{
+    margin-top:12px;
+    padding:8px 15px;
+    border:none;
+    border-radius:6px;
+    background:#2196f3;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#notes li button:hover{
+    background:#1565c0;
+}
+
+#notes li div{
+    margin-top:12px;
+    background:#faf7ef;
+    padding:12px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    white-space:pre-wrap;
+}
