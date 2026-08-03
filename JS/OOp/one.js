@@ -7,4 +7,4 @@ const u1 ={
     }
 }
 
-u1.show()
+// u1.show()
